@@ -25,10 +25,10 @@ def take_photo(filename='photo.jpg', quality=0.8):
         video.srcObject = stream;
         await video.play();
 
-        // Resize the output to fit the video
+        
         google.colab.output.setIframeHeight(document.documentElement.scrollHeight, true);
 
-        // Wait for Capture to be clicked
+        
         await new Promise((resolve) => capture.onclick = resolve);
 
         const canvas = document.createElement('canvas');
